@@ -1,33 +1,67 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define player = Character("[povname]")
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    python:
+        povname = renpy.input("What is your name?", length=32)
+        povname = povname.strip()
 
-    scene bg room
+    scene bg quad
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    player "내 이름은 [povname]. 이번이 나의 대학 생활 마지막 해다."
 
-    show eileen happy
+    player "3년간 열심히 살아왔지... 이번 년도는 열심히 해서 유종의 미를 거둘거야."
 
-    # These display lines of dialogue.
+    player "어떻게 살아야 될까... 곰곰히 생각해보자."
 
-    e "You've created a new Ren'Py game."
+    call driver
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    return
 
-    # This ends the game.
+label driver:
+
+    "이번 달은 무엇에 집중하며 보낼까?"
+
+    menu:
+        "공부":
+            jump study
+        "파티":
+            jump party
+        "게임":
+            jump games
+        "연애":
+            jump dates
+        "운동":
+            jump sports
+
+label study:
+    player "공부를 한다."
+
+    return
+
+label party:
+    player "술을 마신다."
+
+    return
+
+label games:
+    player "게임을 한다."
+
+    return
+
+label dates:
+    player "연애를 한다."
+
+    return
+
+label sports:
+    player "운동을 한다."
 
     return
