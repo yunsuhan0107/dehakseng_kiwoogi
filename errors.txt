@@ -1,0 +1,42 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 30: expected statement.
+    tier = -1
+         ^
+
+File "game/script.rpy", line 32: expected statement.
+    tier = 0
+         ^
+
+File "game/script.rpy", line 34: expected statement.
+    tier = 0.5
+         ^
+
+File "game/script.rpy", line 36: expected statement.
+    tier = 1
+         ^
+
+File "game/script.rpy", line 38: expected statement.
+    tier = 2
+         ^
+
+File "game/script.rpy", line 40: expected statement.
+    tier = 3
+         ^
+
+File "game/script.rpy", line 42: expected statement.
+    tier = 4
+         ^
+
+File "game/script.rpy", line 44: expected statement.
+    tier = 5
+         ^
+
+File "game/script.rpy", line 46: expected statement.
+    tier = 10
+         ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sat Apr 30 03:10:56 2022
