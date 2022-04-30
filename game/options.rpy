@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("dehakseng_kiwoogi")
+define config.name = _("대학생 키우기")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,13 +23,14 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+일리노이대학교의 마지막 해를 보내게 되는 대학생. 당신의 선택에 따라 학생의 운명이 결정된다...!
 """)
 
 

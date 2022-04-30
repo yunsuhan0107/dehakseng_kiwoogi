@@ -10,7 +10,7 @@ define player = Character("[povname]")
 label start:
 
     python:
-        povname = renpy.input("What is your name?", length=32)
+        povname = renpy.input("이름을 적어주세요.", length=32)
         povname = povname.strip()
 
     scene bg quad
