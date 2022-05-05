@@ -185,8 +185,6 @@ label sports:
     image arc = "bg arc.jpg"
     scene arc with dissolve
 
-    player "운동을 한다."
-
     player "체력 단련을 위해 ARC에서 운동을 하자!"
 
     player "벤치 프레스 10회 ... 푸쉬업 15회 ... 스쿼트 20회 ..."
