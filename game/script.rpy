@@ -1,4 +1,5 @@
 define player = Character("[povname]")
+define DJ = Character("DJ")
 
 init python:
     config.screen_width = 1280
@@ -116,7 +117,32 @@ label party:
 
     $ grades -= 5
 
-    player "술을 마신다."
+    $ health -= 5
+
+    image club = "bg club.jpg"
+    scene club with dissolve
+
+    play music "audio/club.mp3" fadein 1.0 fadeout 1.0
+
+    player "4학년 이대로 보내긴 아쉬우니까 미친듯이 즐겨야해!"
+
+    DJ "크게 소리질러 ~ !"
+
+    player "(분위기에 취해 함성을 지른다)"
+    hide text with dissolve
+    with Pause(1)
+
+    player "벌써 데킬라 7잔 째인데 ... 딱 한 잔만 더 마시자."
+
+    "한 달 동안 열심히 클럽을 갔다." with dissolve
+    hide text with dissolve
+    with Pause(1)
+
+    player "이번 달은 너무 과음을 했나..."
+
+    stop music
+    play music "audio/start.mp3" fadein 1.0 fadeout 1.0
+
 
     $ turns += 1
 
@@ -150,10 +176,28 @@ label dates:
     else:
         jump driver
 
+
 label sports:
     $ grades -= 5
 
+    $ athlete += 20
+
+    image arc = "bg arc.jpg"
+    scene arc with dissolve
+
     player "운동을 한다."
+
+    player "체력 단련을 위해 ARC에서 운동을 하자!"
+
+    player "벤치 프레스 10회 ... 푸쉬업 15회 ... 스쿼트 20회 ..."
+
+    "근력이 붙은 기분이야." with dissolve
+
+    hide text with dissolve
+
+    player "이번달은 운동을 열심히 했는 걸."
+
+    $ turns += 1
 
     if turns > 9:
         jump end
