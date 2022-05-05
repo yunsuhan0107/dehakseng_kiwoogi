@@ -2,41 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 30: expected statement.
-    tier = -1
-         ^
-
-File "game/script.rpy", line 32: expected statement.
-    tier = 0
-         ^
-
-File "game/script.rpy", line 34: expected statement.
-    tier = 0.5
-         ^
-
-File "game/script.rpy", line 36: expected statement.
-    tier = 1
-         ^
-
-File "game/script.rpy", line 38: expected statement.
-    tier = 2
-         ^
-
-File "game/script.rpy", line 40: expected statement.
-    tier = 3
-         ^
-
-File "game/script.rpy", line 42: expected statement.
-    tier = 4
-         ^
-
-File "game/script.rpy", line 44: expected statement.
-    tier = 5
-         ^
-
-File "game/script.rpy", line 46: expected statement.
-    tier = 10
-         ^
+File "game/script.rpy", line 160: expected end of line
+    play music "audio/league.mp3" with fadein 1.0 fadeout 1.0
+                                  ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Apr 30 03:10:56 2022
+Thu May  5 17:40:28 2022
